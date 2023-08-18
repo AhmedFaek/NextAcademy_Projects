@@ -1,0 +1,21 @@
+.section3{
+    text-align: center;
+    margin: 100px;
+}   
+.section4{
+    background-color: #5c6447;
+    padding: 60px;
+    display: none;
+}
+.footer{
+    background-color: #5c6447;
+    color: white;
+    padding: 60px;
+}
+.icons{
+    padding: 30px;
+}
+
+.jumbotron{
+    display: none;
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/256c2a56b5.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .jumbotron {
+        background-color: #121212;
+        color: white;
+        border: none;
+    }
+    .bg{
+        background-color: #121212;
+    }
+    .projects-text{
+        text-align: center;
+    }
+    .education-text{
+        color: white;
+        text-align: center;
+        margin-bottom: 150px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .projects-text{
+        color: white;
+        margin-top: 100px;
+    }
+    .Contact{
+        text-align: center;
+        color: white;
+        background-color: black;
+        margin-top: 50px;
+        padding: 50px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+    .design-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        min-height: 100vh;
+        padding: 20px 0;
+        font-family: Jost;
+    }
+
+    .design {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .timeline {
+        width: 80%;
+        height: auto;
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .timeline-content {
+        padding: 20px;
+        background: #1f1f1f;
+        -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+                box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+        border-radius: 5px;
+        color: white;
+        padding: 1.75rem;
+        transition: 0.4s ease;
+        overflow-wrap: break-word !important;
+        margin: 1rem;
+        margin-bottom: 20px;
+        border-radius: 6px;
+    }
+
+    .timeline-component {
+        margin: 0px 20px 20px 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+    .timeline {
+        display: grid;
+        grid-template-columns: 1fr 3px 1fr;
+    }
+    .timeline-middle {
+        position: relative;
+        background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+        width: 3px;
+        height: 100%;
+    }
+    .main-middle {
+        opacity: 0;
+    }
+    .timeline-circle {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
+    }
+    .skills {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #121212;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        color: white;
+    }
+
+    .skills h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .skills-description {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+        color: white;
+        text-align: center;
+    }
+
+</style>
+<body>
+
+
+
+
+
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+    <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-code fa-xl" style="color: #ffffff;"></i>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav"> 
+            <a class="nav-item nav-link active" href="Project1.html" style="font-size: 25px;">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#about" style="font-size: 25px;">About</a>
+            <a class="nav-item nav-link" href="#education" style="font-size: 25px;">Education</a>
+            <a class="nav-item nav-link" href="#projects" style="font-size: 25px;">Projects</a>
+            <a class="nav-item nav-link" href="#skills" style="font-size: 25px;">Skills</a>
+            <a class="nav-item nav-link" href="#contact" style="font-size: 25px;">Contact</a>
+        </div>
+    </div>
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" href="https://www.facebook.com/" target="_blank" style="font-size: 25px;"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+        <a class="nav-item nav-link" href="https://www.instagram.com/"  target="_blank" style="font-size: 25px;" ><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+        <a class="nav-item nav-link" href="https://www.twitter.com/" target="_blank" style="font-size: 25px;"><i class="fa-solid fa-x" style="color: #ffffff;"></i></a>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid" id="about">
+    <div class="container">
+            <div class="row">
+            <div class="col-sm-8">
+                                                            <!-- text -->
+                <h1 class="display-4">Hey, I'm Ahmed!</h1>
+                <p class="lead">A passionate web developer with a knack for clean code and creative design. I specialize in building user-friendly websites and dynamic web applications.</p>
+                <hr class="my-4">
+                <p>My focus on responsive design ensures seamless experiences across all devices. Let's bring your ideas to life and create a strong online presence together!</p>
+                <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#contact" role="button" style="background-color: #c38fff; color: #0c0910;">Contact Me</a>
+                </p>
+                </div>
+                                                            <!-- Photo -->
+                <div class="col-sm-4">
+                <img src="me cropped.jpg" alt="Photo" width="350px">
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+<!-- Education -->
+<section class="design-section" >
+    <h1 class="education-text" id="education">Education</h1>
+    <div class="timeline">
+                    <div class="timeline-empty">
+                    </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-component timeline-content">
+                    <h3>2020 : Now </h3>
+                    <p>Ain Shams University</p>
+            </div>
+                    <div class="timeline-component timeline-content">
+                            <h3>2008 : 2020</h3>
+                            <p>Al-Retaj-International-Schools</p>
+                    </div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+        </div>
+        </div> 
+    </section>
+
+
+
+
+
+
+
+
+<div class="bg">
+<!-- Section1 -->
+<div class="skills" id="skills">
+    <h1>Skills Overview</h1>
+    <p class="skills-description">I specialize in both front-end and back-end development, crafting visually appealing and user-friendly websites that seamlessly adapt to various devices. My expertise lies in utilizing HTML5, CSS3, JavaScript, and jQuery to build dynamic interfaces, while also harnessing the power of Node.js, Express, and MongoDB for efficient server-side development. With a strong emphasis on responsive design, I ensure that the websites I create deliver exceptional user experiences across desktops, tablets, and smartphones. As an avid learner, I am committed to staying abreast of the latest web technologies, allowing me to consistently deliver cutting-edge solutions and tackle complex coding challenges. Collaborating effectively in team environments, I thrive on turning ideas into reality and building strong online presences for clients</p>
+</div>
+
+
+
+<!-- Projects -->
+<h1 class="projects-text" id="projects">Projects</h1>
+<br>
+<div class="container" id="container-project">
+    <div class="row">
+        <div class="col-sm">
+            <div class="card" style="width: 18rem; background-color: #a0a0a0; color: black;">
+                <img class="card-img-top" src="project11.png" alt="Card image cap"  height="200px" >
+                <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Embark on unforgettable journeys to stunning destinations. Explore cultures, create memories, and experience the world with our travel website.</p>
+                <a href="http://localhost/Projects%20Ahmed%20Khaled/Project%203%20(Contact%20US)/travel.php" class="btn btn-primary"  role="button" style="background-color: #e4deb2; color: #0c0910;">Give it a look</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card" style="width: 18rem; background-color: #a0a0a0; color: black;">
+                <img class="card-img-top" src="project22.png" alt="Card image cap" height="200px">
+                <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">Prioritize your well-being with our health website. Access expert insights, wellness tips, and resources to support your journey to a healthier and happier life.</p>
+                <a href="C:\xampp\htdocs\Projects Ahmed Khaled\Session 9 (project 2 Health)\healthy.html" class="btn btn-primary"  role="button" style="background-color: #e4deb2; color: #0c0910;">Give it a look</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card" style="width: 18rem; background-color: #a0a0a0; color: black;">
+                <img class="card-img-top" src="project33.png" alt="Card image cap" height="200px">
+                <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">Stay organized and productive with our todo-list website. Simplify your tasks, boost efficiency, and conquer your day with ease.</p>
+                <a href="http://127.0.0.1:8000" class="btn btn-primary"  role="button" style="background-color: #e4deb2; color: #0c0910;">Give it a look</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+<!-- Footer -->
+<div class="Contact" id="contact">
+    <h1><i class="fa-solid fa-id-card-clip" style="color: #ffffff;" style="margin-right: 15px;"></i> Contact Me</h1>
+    <br>
+    <p><i class="fa-solid fa-phone-volume" style="color: #ffffff;" style="margin-right: 15px;"></i>  Phone: 04104534</p>
+    <p><i class="fa-solid fa-envelope" style="color: #ffffff;" style="margin-right: 15px;"></i> Email: asdasd@gmail.com</p>
+    <p><i class="fa-solid fa-location-dot" style="color: #ffffff;" style="margin-right: 15px;"></i> Fifth Settlement</p>
+    
+</div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.0.0.js" integrity="sha256-iW43nTNM8LFseNmWKhV5FHFW1KcjVQMvzg3l9nPU4oc="
+    crossorigin="anonymous"></script>
+    
+</body>
+</html>
